@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071827">
+    <meta name="description" content="A practical IT and operations diagnostic from ITCS. Identify opportunities to make your technology work better.">
+    <title>ITCS Diagnostic | Smart Technology. Real Impact.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="ITCS Diagnostic home">
+        <span class="brand-logo" role="img" aria-label="ITCS Developers"></span>
+        <span class="brand-divider">/</span><span class="brand-sub">DIAGNOSTIC</span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a class="nav-cta" href="#diagnostic">Start your diagnostic <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A clearer view of what's next</div>
+          <h1>ITCS<br><span>Diagnostic</span></h1>
+          <p class="hero-tagline">Infrastructure - Automation - Operation</p>
+          <p class="hero-copy">A practical first look at the systems behind your business. Find what's working, spot the friction, and focus on the next right move.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#diagnostic">Begin your diagnostic <span aria-hidden="true">→</span></a>
+            <span class="hero-note"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 5.5V10l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> About 10 minutes</span>
+          </div>
+          <div class="hero-footnote"><span class="hero-line"></span> Smart Technology. Real Impact.</div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-frame"></div>
+          <div class="visual-caption"><span class="status-pulse"></span> CONNECTED SYSTEMS <span class="caption-separator">/</span> CLEARER OPERATIONS</div>
+          <div class="visual-index">01 <span>/</span> 04</div>
+        </div>
+        <a class="scroll-cue" href="#how-it-works" aria-label="Scroll to how it works"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="intro-section" id="how-it-works">
+        <div class="section-kicker">A BETTER STARTING POINT <span>01 — 03</span></div>
+        <div class="intro-grid">
+          <div><h2>Good decisions start<br>with <span>a clearer picture.</span></h2></div>
+          <div class="intro-copy">
+            <p>This short, guided diagnostic helps surface opportunities across your IT infrastructure, security, field operations, and day-to-day workflows.</p>
+            <p>Answer based on how things work today. There are no trick questions, and your results are yours to keep.</p>
+          </div>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><span class="step-icon" aria-hidden="true">⌁</span><h3>Tell us the basics</h3><p>A little context helps make your results more relevant.</p></article>
+          <article class="step-card"><span class="step-number">02</span><span class="step-icon" aria-hidden="true">◉</span><h3>Rate what you see</h3><p>Work through 20 practical questions. Add a note wherever it helps.</p></article>
+          <article class="step-card"><span class="step-number">03</span><span class="step-icon" aria-hidden="true">↗</span><h3>Take your report</h3><p>Review your scores, choose a next step, then download or email your results.</p></article>
+        </div>
+      </section>
+
+      <section class="diagnostic-section" id="diagnostic">
+        <div class="section-kicker">YOUR INITIAL DIAGNOSTIC <span>20 QUESTIONS / 4 AREAS</span></div>
+        <div class="diagnostic-heading">
+          <div><h2>Let's get a baseline.</h2><p>Answer for the way your business operates today—not the way you hope it will.</p></div>
+          <div class="progress-box" aria-live="polite"><span class="progress-label">YOUR PROGRESS</span><span class="progress-count" id="progressCount">0 <small>/ 20</small></span><div class="progress-track"><span id="progressBar"></span></div></div>
+        </div>
+        <form id="diagnosticForm">
+          <section class="form-panel metadata-panel" aria-labelledby="aboutHeading">
+            <div class="panel-heading"><div class="panel-number">00</div><div><h3 id="aboutHeading">A little about you</h3><p>Fields marked <span class="required-mark">*</span> are required.</p></div></div>
+            <div class="metadata-grid">
+              <label class="field"><span>Company <span class="required-mark">*</span></span><input name="company" autocomplete="organization" required maxlength="100" placeholder="Your company name"></label>
+              <label class="field"><span>Contact <span class="required-mark">*</span></span><input name="contact" autocomplete="name" required maxlength="100" placeholder="Full name"></label>
+              <label class="field"><span>Date <span class="required-mark">*</span></span><input name="date" type="date" required></label>
+              <label class="field"><span>Interviewer</span><input name="interviewer" maxlength="100" placeholder="Name, if applicable"></label>
+              <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" maxlength="50" placeholder="Phone number"></label>
+              <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" maxlength="150" placeholder="name@company.com"></label>
+            </div>
+          </section>
+          <div id="questionGroups"></div>
+          <section class="form-panel followup-panel" aria-labelledby="followupHeading">
+            <div class="panel-heading"><div class="panel-number">05</div><div><h3 id="followupHeading">Your priorities &amp; next step</h3><p>Use your results to decide what would be most useful from here.</p></div></div>
+            <div class="followup-grid">
+              <fieldset class="field-set"><legend>Recommended next step</legend><label class="select-wrap"><select name="nextStep"><option value="">Select a next step</option><option>No immediate action</option><option>Paid IT Assessment</option><option>Paid Operations Assessment</option><option>Both</option></select></label></fieldset>
+              <label class="field"><span>Client priority / timing</span><input name="priority" maxlength="200" placeholder="e.g., Improve job visibility this quarter"></label>
+              <label class="field"><span>Follow-up date</span><input name="followupDate" type="date"></label>
+            </div>
+            <div class="top-opportunities"><span class="subsection-label">Top three opportunities to explore</span><div class="opportunity-fields">
+              <label class="field"><span>Opportunity 1</span><input name="opportunity1" maxlength="200" placeholder="First opportunity"></label>
+              <label class="field"><span>Opportunity 2</span><input name="opportunity2" maxlength="200" placeholder="Second opportunity"></label>
+              <label class="field"><span>Opportunity 3</span><input name="opportunity3" maxlength="200" placeholder="Third opportunity"></label>
+            </div></div>
+            <p class="closing-question">Suggested closing question: “Which one of these issues would make the biggest difference to your business if it were solved?”</p>
+          </section>
+          <div class="form-submit-row"><p>Your answers stay in this browser until you choose to export them.</p><button type="submit" class="button button-primary">View my results <span aria-hidden="true">→</span></button></div>
+        </form>
+
+        <section class="results-section" id="results" aria-labelledby="resultsHeading" hidden>
+          <div class="results-topline"><span class="eyebrow-dot"></span> YOUR INITIAL DIAGNOSTIC RESULTS</div>
+          <div class="results-heading">
+            <div><h2 id="resultsHeading">Your next move,<br><span>made clearer.</span></h2><p id="resultsIntro"></p></div>
+            <div class="overall-score"><span>OVERALL SCORE</span><strong id="overallScore">—</strong><small>out of 100</small></div>
+          </div>
+          <div class="score-grid" id="scoreGrid"></div>
+          <div class="results-detail-grid">
+            <section class="result-card"><div class="result-card-kicker">AREAS TO EXPLORE</div><h3>Top opportunities</h3><ol id="opportunityList"></ol></section>
+            <section class="result-card"><div class="result-card-kicker">YOUR FOLLOW-UP</div><h3>Recommended next step</h3><p class="next-step-result" id="nextStepResult"></p><dl id="followupDetails"></dl></section>
+          </div>
+          <div class="disclaimer"><span aria-hidden="true">ⓘ</span><p><strong>A note on this diagnostic.</strong> This screening is intended to support an initial conversation. It is not a technical audit, security certification, or compliance assessment. Scores are preliminary and based on client statements; they do not guarantee that any system is secure or compliant.</p></div>
+          <div class="results-actions"><button type="button" class="button button-primary" id="downloadPdf">Download PDF <span aria-hidden="true">↓</span></button><button type="button" class="button button-outline" id="emailResults">Prepare email <span aria-hidden="true">↗</span></button><button type="button" class="text-button" id="editAnswers">← Edit answers</button></div>
+          <p class="email-disclosure" id="emailDisclosure" hidden>Your email app will open with a summary and your report details. Review the message, attach the downloaded PDF if you wish, and press Send. ITCS does not receive anything until you send it.</p>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home" aria-label="ITCS home"><span class="brand-logo" role="img" aria-label="ITCS Developers"></span><span class="brand-divider">/</span><span class="brand-sub">DIAGNOSTIC</span></a>
+      <span>Infrastructure - Automation - Operation</span><span>Smart Technology. Real Impact.</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
